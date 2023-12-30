@@ -117,9 +117,21 @@ public class VersionEngine {
 
     switch (version) {
       case Sniff:
-        sndList.addAll(Arrays.asList(new RandomizationSound(Sound.ENTITY_SNIFFER_SCENTING, "Sniff")));
+        sndList.addAll(
+                Arrays.asList(
+                new RandomizationSound(
+                        Sound.ENTITY_SNIFFER_SCENTING,
+                        "Sniff")
+                )
+        );
       case Frogs:
-        sndList.addAll(Arrays.asList(new RandomizationSound(Sound.ENTITY_FROG_AMBIENT, "Wibbit")));
+        sndList.addAll(
+                Arrays.asList(
+                new RandomizationSound(
+                        Sound.ENTITY_FROG_AMBIENT,
+                        "Wibbit")
+                )
+        );
       case Goats:
         matList.addAll(
             Arrays.asList(
@@ -132,8 +144,17 @@ public class VersionEngine {
                     Material.AMETHYST_BLOCK,
                     Material.AMETHYST_BLOCK,
                     "RandomSpawnRatios.Amethyst",
-                    "Amethyst")));
-        sndList.addAll(Arrays.asList(new RandomizationSound(Sound.ENTITY_GOAT_PREPARE_RAM, "Maa")));
+                    "Amethyst")
+            )
+        );
+        sndList.addAll(
+            Arrays.asList(
+                new RandomizationSound(
+                    Sound.ENTITY_GOAT_PREPARE_RAM,
+                    "Maa"
+                )
+            )
+        );
       case AncientDebris:
         matList.addAll(
             Arrays.asList(
@@ -148,11 +169,22 @@ public class VersionEngine {
         matList.addAll(
             Arrays.asList(
                 new RandomizedMaterial(
-                    Material.ANDESITE, Material.ANDESITE, "RandomSpawnRatios.Andesite", "Andesite"),
+                    Material.ANDESITE,
+                    Material.ANDESITE,
+                    "RandomSpawnRatios.Andesite",
+                    "Andesite"),
                 new RandomizedMaterial(
-                    Material.DIORITE, Material.DIORITE, "RandomSpawnRatios.Diorite", "Diorite"),
+                    Material.DIORITE,
+                    Material.DIORITE,
+                    "RandomSpawnRatios.Diorite",
+                    "Diorite"),
                 new RandomizedMaterial(
-                    Material.GRANITE, Material.GRANITE, "RandomSpawnRatios.Granite", "Granite")));
+                    Material.GRANITE,
+                    Material.GRANITE,
+                    "RandomSpawnRatios.Granite",
+                    "Granite")
+            )
+        );
       case Concrete:
         matList.addAll(
             Arrays.asList(
@@ -235,7 +267,9 @@ public class VersionEngine {
                     Material.YELLOW_CONCRETE_POWDER,
                     Material.YELLOW_CONCRETE_POWDER,
                     "RandomSpawnRatios.ConcretePowderYellow",
-                    "ConcretePowderYellow")));
+                    "ConcretePowderYellow")
+            )
+        );
       case Legacy:
         if (version == Version.Goats) {
           matList.addAll(
@@ -260,6 +294,11 @@ public class VersionEngine {
                       Material.DEEPSLATE_EMERALD_ORE,
                       "RandomSpawnRatios.Emerald",
                       "Emerald"),
+                  new RandomizedMaterial(
+                      Material.NETHER_QUARTZ_ORE,
+                      Material.NETHER_QUARTZ_ORE,
+                      "RandomSpawnRatios.Quartz",
+                      "Quartz"),
                   new RandomizedMaterial(
                       Material.GLOWSTONE,
                       Material.GLOWSTONE,
@@ -291,7 +330,17 @@ public class VersionEngine {
                       "RandomSpawnRatios.Redstone",
                       "Redstone"),
                   new RandomizedMaterial(
-                      Material.STONE, Material.DEEPSLATE, "RandomSpawnRatios.Stone", "Stone")));
+                      Material.STONE,
+                      Material.DEEPSLATE,
+                      "RandomSpawnRatios.Stone",
+                      "Stone"),
+                  new RandomizedMaterial(
+                      Material.GRASS_BLOCK,
+                      Material.DIRT,
+                      "RandomSpawnRatios.Dirt",
+                      "Dirt")
+              )
+          );
         } else {
           matList.addAll(
               Arrays.asList(
@@ -301,7 +350,9 @@ public class VersionEngine {
                       "RandomSpawnRatios.Cobblestone",
                       "Cobblestone"),
                   new RandomizedMaterial(
-                      Material.COAL_ORE, Material.COAL_ORE, "RandomSpawnRatios.Coal", "Coal"),
+                      Material.COAL_ORE, Material.COAL_ORE,
+                      "RandomSpawnRatios.Coal",
+                      "Coal"),
                   new RandomizedMaterial(
                       Material.DIAMOND_ORE,
                       Material.DIAMOND_ORE,
@@ -313,16 +364,30 @@ public class VersionEngine {
                       "RandomSpawnRatios.Emerald",
                       "Emerald"),
                   new RandomizedMaterial(
+                      Material.NETHER_QUARTZ_ORE,
+                      Material.NETHER_QUARTZ_ORE,
+                      "RandomSpawnRatios.Quartz",
+                      "Quartz"),
+                  new RandomizedMaterial(
                       Material.GLOWSTONE,
                       Material.GLOWSTONE,
                       "RandomSpawnRatios.Glowstone",
                       "Glowstone"),
                   new RandomizedMaterial(
-                      Material.GOLD_ORE, Material.GOLD_ORE, "RandomSpawnRatios.Gold", "Gold"),
+                      Material.GOLD_ORE,
+                      Material.GOLD_ORE,
+                      "RandomSpawnRatios.Gold",
+                      "Gold"),
                   new RandomizedMaterial(
-                      Material.IRON_ORE, Material.IRON_ORE, "RandomSpawnRatios.Iron", "Iron"),
+                      Material.IRON_ORE,
+                      Material.IRON_ORE,
+                      "RandomSpawnRatios.Iron",
+                      "Iron"),
                   new RandomizedMaterial(
-                      Material.LAPIS_ORE, Material.LAPIS_ORE, "RandomSpawnRatios.Lapis", "Lapis"),
+                      Material.LAPIS_ORE,
+                      Material.LAPIS_ORE,
+                      "RandomSpawnRatios.Lapis",
+                      "Lapis"),
                   new RandomizedMaterial(
                       Material.OBSIDIAN,
                       Material.OBSIDIAN,
@@ -334,12 +399,28 @@ public class VersionEngine {
                       "RandomSpawnRatios.Redstone",
                       "Redstone"),
                   new RandomizedMaterial(
-                      Material.STONE, Material.STONE, "RandomSpawnRatios.Stone", "Stone")));
+                      Material.STONE,
+                      Material.STONE,
+                      "RandomSpawnRatios.Stone",
+                      "Stone"),
+                  new RandomizedMaterial(
+                      Material.GRASS_BLOCK,
+                      Material.DIRT,
+                      "RandomSpawnRatios.Dirt",
+                      "Dirt")
+              )
+          );
         }
         sndList.addAll(
             Arrays.asList(
-                new RandomizationSound(Sound.BLOCK_LAVA_EXTINGUISH, "Normal"),
-                new RandomizationSound(Sound.ENTITY_CREEPER_PRIMED, "Ssss")));
+                new RandomizationSound(
+                    Sound.BLOCK_LAVA_EXTINGUISH,
+                    "Normal"),
+                new RandomizationSound(
+                    Sound.ENTITY_CREEPER_PRIMED,
+                    "Ssss")
+            )
+        );
         break;
       default:
         break;
