@@ -25,6 +25,7 @@ RandomSpawnRatios:
   Diorite: 3
   Emerald: 1
   Glowstone: 1
+  Quartz: 1
   Gold: 3
   Granite: 3
   Iron: 4
@@ -32,6 +33,7 @@ RandomSpawnRatios:
   Obsidian: 0
   Redstone: 8
   Stone: 0
+  Dirt: 2
 RandomizeOnStoneCreation: false
 RandomizeOnObsidianCreation: false
 RandomizationSound: Ssss
