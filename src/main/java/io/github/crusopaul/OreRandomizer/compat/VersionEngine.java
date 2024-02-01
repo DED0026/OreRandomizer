@@ -61,48 +61,23 @@ public class VersionEngine {
   private Version parseVersionString(String BukkitVersionString) {
     final Version version;
 
-    if (BukkitVersionString.contains("1.20.2")
-        || BukkitVersionString.contains("1.20.1")
-        || BukkitVersionString.contains("1.20")) {
+    if (BukkitVersionString.contains("1.20")) {
       version = Version.Sniff;
-    } else if (BukkitVersionString.contains("1.19.4")
-        || BukkitVersionString.contains("1.19.3")
-        || BukkitVersionString.contains("1.19.2")
-        || BukkitVersionString.contains("1.19.1")
-        || BukkitVersionString.contains("1.19")) {
+    } else if (BukkitVersionString.contains("1.19")) {
       version = Version.Frogs;
-    } else if (BukkitVersionString.contains("1.18.1")
-        || BukkitVersionString.contains("1.18")
-        || BukkitVersionString.contains("1.17.1")
+    } else if (BukkitVersionString.contains("1.18")
         || BukkitVersionString.contains("1.17")) {
       version = Version.Goats;
-    } else if (BukkitVersionString.contains("1.16.5")
-        || BukkitVersionString.contains("1.16.4")
-        || BukkitVersionString.contains("1.16.3")
-        || BukkitVersionString.contains("1.16.2")
-        || BukkitVersionString.contains("1.16.1")
-        || BukkitVersionString.contains("1.16")) {
+    } else if (BukkitVersionString.contains("1.16")) {
       version = Version.AncientDebris;
-    } else if (BukkitVersionString.contains("1.15.2")
-        || BukkitVersionString.contains("1.15.1")
-        || BukkitVersionString.contains("1.15")) {
+    } else if (BukkitVersionString.contains("1.15")) {
       version = Version.Bees;
-    } else if (BukkitVersionString.contains("1.14.4")
-        || BukkitVersionString.contains("1.14.3")
-        || BukkitVersionString.contains("1.14.2")
-        || BukkitVersionString.contains("1.14.1")
-        || BukkitVersionString.contains("1.14")
-        || BukkitVersionString.contains("1.13.2")
-        || BukkitVersionString.contains("1.13.1")
+    } else if (BukkitVersionString.contains("1.14")
         || BukkitVersionString.contains("1.13")) {
       version = Version.PreBees;
-    } else if (BukkitVersionString.contains("1.12.2")
-        || BukkitVersionString.contains("1.12.1")
-        || BukkitVersionString.contains("1.12")) {
+    } else if (BukkitVersionString.contains("1.12")) {
       version = Version.Concrete;
-    } else if (BukkitVersionString.contains("1.11.2")
-        || BukkitVersionString.contains("1.11.1")
-        || BukkitVersionString.contains("1.11")) {
+    } else if (BukkitVersionString.contains("1.11")) {
       version = Version.Legacy;
     } else {
       version = Version.None;
